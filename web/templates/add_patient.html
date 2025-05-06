@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thêm bệnh nhân</title>
+</head>
+<body>
+    <h1>Nhập thông tin bệnh nhân</h1>
+    <form method="POST" action="{{ url_for('add_patient') }}">
+        <label for="age">Tuổi:</label>
+        <input type="number" name="age" required><br>
+        
+        <label for="smoking">Hút thuốc:</label>
+        <input type="number" name="smoking" required><br>
+        
+        <label for="cough">Ho:</label>
+        <input type="number" name="cough" required><br>
+        
+        <label for="breathlessness">Khó thở:</label>
+        <input type="number" name="breathlessness" required><br>
+        
+        <label for="weight_loss">Giảm cân:</label>
+        <input type="number" name="weight_loss" required><br>
+        
+        <button type="submit">Thêm bệnh nhân</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Quay lại danh sách</a>
+</body>
+</html>
